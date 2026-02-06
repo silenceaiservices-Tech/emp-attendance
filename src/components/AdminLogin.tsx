@@ -74,7 +74,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess, onCancel }) =
         </form>
 
         <p className="mt-4 text-center text-xs text-muted-foreground">
-          Default PIN: 1234
+          Default PIN: ***@**
         </p>
       </motion.div>
     </motion.div>
