@@ -8,7 +8,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const ADMIN_PIN = '1234'; // Default admin PIN
+const ADMIN_PIN = 'sao@26'; // Default admin PIN
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -21,7 +21,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const login = (pin: string): boolean => {
-    if (pin === ADMIN_PIN) {
+    if (pin == ADMIN_PIN) {
       setIsAdmin(true);
       sessionStorage.setItem('isAdmin', 'true');
       return true;
